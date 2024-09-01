@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.epcst-header{
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #F8F8F8;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.epcst-logo-and-name, .epcst-location{
+    display: flex;
+}
+
+.epcst-location{
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.schoolname{
+    max-width: 400px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.address{
+    max-width: 300px;
+    text-align: center;
+}
+/* HEADER */
+
+/* NAVIGATION */
+.epcst-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    transition: 0.5s;
+    display: inline-block;
+    padding: 2px 6px;
+    position: relative;
+    padding-bottom: 3.5px;
+}
+
+.epcst-nav-buttons a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #208824;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.epcst-nav-buttons a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.epcst-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    list-style: none;
+}
+
+.epcst-navigational{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 12px;
+}
+
+/* NAVIGATIOn */
+
+/* ABOUT BANNER and ABOUT */
+.accent-green-line{
+    border: 3px solid #50AF36;
+    max-width: 0px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.epcst-about-title{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 35px;
+    color: #F8F8F8;
+    font-weight: 400;
+}
+
+.about-container{
+    display: flex;
+    padding: 300px 0px 80px 200px;
+    gap: 1%;
+}
+
+.epcst-abt-desc{
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 10px;
+}
+
+.glance-title{
+    background-color: #208824;
+    color: white;
+    font-family: 'DM Serif Text', sans-serif;
+    font-weight: 400;
+    max-width: 355px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.about-container-2{
+    display: flex;
+    padding: 40px 0px 0px 0px;
+    gap: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    padding-bottom: 75px;
+}
+
+/* ABOUT BANNER and ABOUT*/ 
+
+/* ACCENT COLOR */
+.accent-color-green{
+    border: 1px solid green;
+    margin: 10px 0px 0px 0px;
+    padding: 6px;
+    background-color: green;
+}
+
+
+.accent-color-black{
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0px 0px 10px 0px;
+    padding: 6px;
+}
+
+/* ACCENT COLOR */
+
+/* MISSION AND VISION */
+.mission-title, .vision-title{
+    color: white;
+    font-family: 'DM Serif Text', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+.mission-desc, .vision-desc{
+    max-width: 600px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px auto 0px auto;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.mission-vision-container{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+.title-color-black{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+/* MISSION AND VISION */
+
+/* HYMN */
+.epcst-hymn-container h2{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+}
+
+.epcst-hymn-container p{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.epcst-hymn-container{
+    background-color: #EDECEC;
+}
+/* HYMN */
+
+/* FOOTER */
+.footer{
+    background-color: #208824;
+    text-align: center;
+}
+
+.footerSchoolName, .epcst-socials, .epcst-end{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 350px;
+    margin: 0px auto 0px auto;
+}
+
+.epcst-socials{
+    margin-top: 10px;
+}
+
+.division-line, .division-line-2{
+    border: 1px solid white;
+    max-width: 400px; 
+    margin: 20px auto 0px auto;
+}
+
+.division-line-2{
+    margin-top: 100px;
+    max-width: 300px;
+}
+
+.epcst-socialButtons{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 15px;
+}
+
+.epcst-footer-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.epcst-footer-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    list-style: none;
+    padding:0 7px;
+}
+
+.epcst-footer-nav-buttons li{
+    position:relative;
+}
+
+.epcst-footer-nav{
+    margin-top: 20px;
+}
+
+ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+}
+
+.epcst-end{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+.end-epcst{
+    margin-top: 10px;
+}
+/* FOOTER */

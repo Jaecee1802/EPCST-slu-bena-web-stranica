@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.epcst-header{
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #F8F8F8;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.epcst-logo-and-name, .epcst-location{
+    display: flex;
+}
+
+.epcst-location{
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.schoolname{
+    max-width: 400px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.address{
+    max-width: 300px;
+    text-align: center;
+}
+/* HEADER */
+
+/* NAVIGATION */
+.epcst-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    transition: 0.5s;
+    display: inline-block;
+    padding: 2px 6px;
+    position: relative;
+    padding-bottom: 3.5px;
+}
+
+.epcst-nav-buttons a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #208824;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.epcst-nav-buttons a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.epcst-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    list-style: none;
+}
+
+.epcst-navigational{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 12px;
+}
+
+/* NAVIGATIOn */
+
+/* VIDEO BANNER */
+.epcst-banner{
+    position: relative;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.epcst-banner video{
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;  
+}
+
+.epcst-banner h1{
+    color: white;
+    text-align: center;
+    font-family: 'DM Serif Text', sans-serif;
+    max-width: 800px;
+    font-weight: 700;
+    font-size: 50px;
+}
+/* VIDEO BANNER */
+
+/* ACCENT COLOR */
+.accent-color-green{
+    border: 1px solid green;
+    margin: 10px 0px 10px 0px;
+    padding: 6px;
+    background-color: green;
+}
+
+.accent-color-black{
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: -10px 0px 10px 0px;
+    padding: 6px;
+}
+/* ACCENT COLOR */
+
+/* LATEST NEWS */
+.news-vanity-line{
+    border: 3px solid rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    max-width: 50px;
+    margin-left: 11%;
+}
+
+.container-news{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 4%;
+    flex-wrap: wrap;
+    gap: 9%;
+}
+
+.epcst-latest-news{
+    flex-wrap: wrap;
+    background-color: #D0D0D0;
+    padding-bottom: 80px;
+}
+
+.news-title-pic{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.news-photo{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-title{
+    padding-top: 7.5%;
+    padding-left: 10%;
+    margin-left: 20px;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.epcst-seemore-button{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    border: 4px solid rgba(0, 0, 0, 0.9);
+    border-radius: 60px;
+    background-color: #D9D9D9;
+    padding: 10px 60px 10px 60px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.epcst-seemore-button a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.epcst-seemore-button:hover{
+    background-color: #208824;
+    color: #F8F8F8;
+}
+
+.epcst-news-1 a, .epcst-news-2 a, .epcst-news-3 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.epcst-news-1 a:hover, .epcst-news-2 a:hover, .epcst-news-3 a:hover{
+    color: #208824;
+    
+}
+
+.epcst-news-1 img, .epcst-news-2 img, .epcst-news-3 img{
+    text-decoration: none;
+    color: black;
+    transition: scale .5s;
+}
+
+.epcst-news-1 img:hover, .epcst-news-2 img:hover, .epcst-news-3 img:hover{
+    transform:scale(1.05);
+}
+
+
+/* LATEST NEWS */
+
+
+/* EPCST STUDENTS REVIEW */
+.epcst-students-say{
+    background-color: #E5E5E5;
+    padding-bottom: 10%;
+}
+
+.epcst-students-say h1{
+    text-align: center;
+    font-family: 'DM Serif Text', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    padding-top: 8%;
+}
+
+.rev-descrip{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.kuya-ray, .herlyn{
+    background-color: #F8F8F8;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ray-leonard{
+    margin-top: 20px;
+}
+
+.student-rating{
+    margin-top: 40px;
+}
+
+.student-review{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.student-name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #208824;
+}
+
+.student-ratings{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+/* EPCST STUDENT REVIEW */
+
+/* FOOTER */
+
+.footer{
+    background-color: #208824;
+    text-align: center;
+}
+
+.footerSchoolName, .epcst-socials, .epcst-end{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 350px;
+    margin: 0px auto 0px auto;
+}
+
+.epcst-socials{
+    margin-top: 10px;
+}
+
+.division-line, .division-line-2{
+    border: 1px solid white;
+    max-width: 400px; 
+    margin: 20px auto 0px auto;
+}
+
+.division-line-2{
+    margin-top: 100px;
+    max-width: 300px;
+}
+
+.epcst-socialButtons{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 15px;
+}
+
+.epcst-footer-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.epcst-footer-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    list-style: none;
+    padding:0 7px;
+}
+
+.epcst-footer-nav-buttons li{
+    position:relative;
+}
+
+.epcst-footer-nav{
+    margin-top: 20px;
+}
+
+ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+}
+
+.epcst-end{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+.end-epcst{
+    margin-top: 10px;
+}
