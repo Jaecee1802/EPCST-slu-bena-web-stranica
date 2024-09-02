@@ -143,7 +143,7 @@ body{
 /* ACCENT COLOR */
 .accent-color-green{
     border: 1px solid green;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 6px;
     background-color: green;
 }
@@ -177,13 +177,15 @@ body{
     text-justify: inter-word;
     margin: 0px auto 0px auto;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .mission-vision-container{
     display: flex;
     justify-content: center;
     gap: 6%;
+    background-color: #EDECEC;
+    padding-bottom: 40px;
 }
 
 .title-color-black{

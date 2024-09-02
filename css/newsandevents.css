@@ -86,7 +86,7 @@ body{
 
 /* NAVIGATIOn */
 
-/* PROGRAMS */
+/* NEWS */
 .accent-green-line{
     border: 3px solid #50AF36;
     max-width: 0px;
@@ -94,89 +94,97 @@ body{
     margin-top: 5px;
 }
 
-.epcst-programs-title{
+.epcst-newsevents-title{
     font-family: 'DM Serif Text', sans-serif;
     font-size: 35px;
     color: #F8F8F8;
     font-weight: 400;
 }
 
-.programs-container{
+.newsevents-container{
     display: flex;
     padding: 300px 0px 80px 200px;
     gap: 1%;
 }
-/* PROGRAMS */
+/* NEWS */
 
-/* CHED and Tesda Courses */
-.ched-title, .tesda-title{
-    padding-top: 7.5%;
-    font-family: "DM Serif Text", sans-serif;
+/* NEWS AND EVENTS */
+.news-tile h4, .news-tile h2{
+    font-family: 'Open Sans', sans-serif;
 }
 
-.ched-vanity-line, .tesda-vanity-line{
-    border: 3px solid rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    max-width: 50px;
-}
-
-.ched-title-2, .tesda-title-2{
-    background-color: #208824;
-    color: white;
-    font-family: 'DM Serif Text', sans-serif;
+.news-tile h4{
     font-weight: 400;
-    max-width: 355px;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    font-size: 35px;
-    padding-left: 10px;
-}
-
-ul.ched-list, ul.tesda-list {
-    list-style-type: decimal;
-    margin-left: 20px;
-    max-width:  345px;
     text-align: justify;
     text-justify: inter-word;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    max-width: 250px;
+    margin-bottom: 40px;
 }
 
-.epcst-ched-courses-container, .epcst-tesda-courses {
-    display: flex;
+.news-tile h2{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.news-tile p{
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.epcst-news-events-container{
+    padding: 40px 0px 180px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: center;
-    gap: 10%;
+    gap: 10%;  
     background-color: #EDECEC;
-    padding-bottom: 80px;
     flex-wrap: wrap;
 }
 
-.ched-pic{
-    max-width: 100%;
-    height: auto;
+.date-and-comment li{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    padding-top: 40px;
 }
-/* CHED and Tesda Courses */
 
+.date-and-comment{
+    display: flex;
+    gap: 5%;
+}
+
+.epcst-readmore-button {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.epcst-readmore-button:hover{
+    text-decoration: underline;
+}
+/* NEWS AND EVENTS */
 
 /* ACCENT COLOR */
 .accent-color-green{
     border: 1px solid green;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
     padding: 6px;
     background-color: green;
 }
 
-
 .accent-color-black{
     border: 1px solid rgba(0, 0, 0, 0.9);
     background-color: rgba(0, 0, 0, 0.9);
-    margin: 0px 0px 10px 0px;
+    margin: -10px 0px 10px 0px;
     padding: 6px;
 }
-
 /* ACCENT COLOR */
 
 /* FOOTER */
+
 .footer{
     background-color: #208824;
     text-align: center;
@@ -258,4 +266,3 @@ ul li:not(:last-child)::after{
 .end-epcst{
     margin-top: 10px;
 }
-/* FOOTER */
