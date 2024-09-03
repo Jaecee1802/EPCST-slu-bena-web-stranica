@@ -82,6 +82,17 @@ body{
 .epcst-navigational{
     background-color: rgba(0, 0, 0, 0.9);
     padding: 12px;
+    z-index: 9999;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .epcst-banner{
+    padding-top: 60px;
 }
 
 /* NAVIGATIOn */
