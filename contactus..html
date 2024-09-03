@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPCST-Contact us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        .contact-container{
+            background-image: url(images/Background\ Footer.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* contact us form background */
+        .epcst-contact-us-container{
+            background-color: #E5E5E5;
+            padding: 20px;
+        }
+        
+        .epcst-contact-us-container::after{
+            content: "ERROR(32094): Due to low resolution and trying the best of our team to upscale the photo but still no effect, this might be the banner for a while.";
+            font-family: "Lucida Console", monospace;
+            font-size: 12px;
+            color: black;
+        }
+
+        .epcst-contact-info-container{
+            background-color: #208824;
+            color: white;
+        }
+
+        .footer{
+            background-image: url(images/Background\ Footer.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- start of the code  -->
+        <div class="epcst-header">  <!--main div of the header-->
+
+            <div class="epcst-logo-and-name">
+                <img src="images/websiteLogo.png" alt="School Logo" class="east-logo" style="max-height: 140px;">
+                <h2 class="schoolname">Eastwoods Professional College of Science & Technology </h2>
+            </div>
+            <div class="epcst-location">
+                <h2 class="address">A.H. Banzon St. Ibayo, City of Balanga, Bataan </h2>
+                <img src="images/Location Icon With Transparent Background.png" alt="loc" style="max-height: 25px;">
+            </div>
+
+        </div>
+
+        <div class="epcst-navigational" id="navbar">  <!--main div of the navigation-->
+
+            <nav class="epcst-nav-buttons">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="newsevent.html">News and Events</a></li>
+                    <li><a href="contactus..html">Contacts</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="contact-container"> <!--main div for about banner-->
+            <div class="accent-green-line"></div>
+
+            <div class="epcst-contact-banner">
+                <h2 class="epcst-contact-title">CONTACT US</h2>
+            </div>
+            
+        </div>
+
+        <div class="accent-color-green"></div>
+
+        <div class="epcst-contact-us-container"><!--main div for the form-->
+
+            <div class="form-background"> <!--for background color-->
+
+                <h4>Our representative would love to assist you.</h4>
+
+                <form action="#">
+                    <div class="fullname-email-container" style="margin-top: 20px;">
+                        <input type="text" id="fname" name="firstname" placeholder="Full Name" class="text-name">
+                        <input type="text" id="email" name="email" placeholder="Email" class="email-add">
+                    </div>
+                    
+                    <div class="phonenum-country-container">
+                        <input type="number" id="phonenum" name="phonenum" placeholder="Phone Number" class="phone-number">
+                        <input type="text" id="country" name="country" placeholder="Country" class="country-place">
+                    </div>
+
+                    <div class="container-for-college-tesda">
+                        <div class="pang-baba">
+                            <label for="collegetesda">College/Tesda:</label>
+                        </div>
+                        <select id="collegetesda" name="collegetesda">
+                        <option value="null"></option>
+                        <option value="college">College</option>
+                        <option value="tesda">Tesda</option>
+                        </select>
+                    </div>
+
+                    <div class="subject-container">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" class="subject-textbox">
+                    </div>
+
+
+                    <div class="container-message">
+                        <div class="pang-baba">
+                            <label for="message-text">Message:</label>
+                        </div>
+                        <input type="text" id="message" name="message" placeholder="Message" class="message-textbox" style="margin-top: 5px;">
+                    </div>
+    
+                    <input type="submit" value="Submit" href="#">
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="epcst-contact-info-container">
+            <div class="contact-info" style="margin: 10px;">
+                <img src="images/contactnumber-icon" alt="EPCST Number" style="max-height: 30px; margin-top: 5px;">
+                <p class="contact-number">237-4334 /0927 340 3001</p>
+            </div>
+
+            <div class="contact-info" style="margin: 10px;">
+                <img src="images/fbblack.png" alt="FB EPCST">
+                <p class="facebook-page">EPCST/</p>
+            </div>
+
+            <div class="contact-info" style="margin: 10px;">
+                <img src="images/mail.png" alt="Email EPCST" style="max-height: 30px; margin-top: 5px;">
+                <p class="email-address">eastwoodsprofessional@yahoo.com</p>
+            </div>
+        </div>
+
+
+        <div class="footer"><!--main div for footer-->
+
+
+            <div class="schooLogo"> <!--Putek nalagay sorry -->
+                <img src="images/websiteLogo.png" alt="schoollogo" style="max-height: 129px; background-color: #f8f8f8; border-radius: 10%; margin-top: 40px;" class="footer-logo">
+                <p class="footerSchoolName">Eastwoods Professional College of Science & Technology </p>
+    
+                <div class="division-line"></div><!--Vanity-->
+    
+                <div class="epcst-socials">
+                    <p class="socials-title">Contact Us:</p>
+    
+                    <div class="epcst-socialButtons">
+                        <div class="epcst-fb">
+                            <a href="#"><img src="images/fb.png" alt="East FB" style="max-height: 30px; max-width: 30px;"></a>
+                        </div>
+                        <div class="epcst-ig">
+                            <a href="#"><img src="images/instagram-white-icon.png" alt="East IG" style="max-height: 30px; max-width: 30px;"></a>
+                        </div>
+                        <div class="epcst-youtubee">
+                            <a href="#"><img src="images/yt.png" alt="East Youtube" style="max-height: 30px; max-width: 30px; margin-top: 4px;"></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="division-line-2"></div>
+    
+                <div class="epcst-footer-nav">
+                    <nav class="epcst-footer-nav-buttons">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="newsevent.html">News and Events</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="end-epcst">
+                    <p class="epcst-end">Copyright©2024. All Rights Reserved Eastwoods Professional College of Science & Technology | Bataan PH</p>
+                </div>
+    
+            </div>
+    
+        </div>
+        
+        <!-- end of the code -->
+    </div>
+    <script src="script/stickyNav.js"></script>
+</body>
+</html>
