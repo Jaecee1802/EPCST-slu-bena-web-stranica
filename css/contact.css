@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.epcst-header{
+    display: flex;
+    justify-content: center;
+    gap: 35%;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #F8F8F8;
+    font-family: "DM Serif Text", sans-serif;
+}
+
+.epcst-logo-and-name, .epcst-location{
+    display: flex;
+}
+
+.epcst-location{
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.schoolname{
+    max-width: 400px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.address{
+    max-width: 300px;
+    text-align: center;
+}
+/* HEADER */
+
+/* NAVIGATION */
+.epcst-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    transition: 0.5s;
+    display: inline-block;
+    padding: 2px 6px;
+    position: relative;
+    padding-bottom: 3.5px;
+}
+
+.epcst-nav-buttons a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #208824;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.epcst-nav-buttons a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.epcst-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+    list-style: none;
+}
+
+.epcst-navigational{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 12px;
+    z-index: 9999;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .mission-vision-container{
+    padding-top: 60px;
+}
+
+/* NAVIGATIOn */
+
+
+/* Contact Us Banner */
+.accent-green-line{
+    border: 3px solid #50AF36;
+    max-width: 0px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.epcst-contact-title{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 35px;
+    color: #F8F8F8;
+    font-weight: 400;
+}
+
+.contact-container{
+    display: flex;
+    padding: 300px 0px 80px 200px;
+    gap: 1%;
+}
+/* Contact US Banner */
+
+/* Accent Color */
+.accent-color-green{
+    border: 1px solid green;
+    margin: 10px 0px 15px 0px;
+    padding: 6px;
+    background-color: green;
+}
+/* Accent Color */
+
+/* Contact Us Form */
+.fullname-email-container, 
+.phonenum-country-container, 
+.subject-container, .container-for-college-tesda,
+.container-message{
+    margin-bottom: 5px;
+}
+
+.text-name, .phone-number, .email-add, .country-place{
+    width: 320px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.subject-textbox{
+    width: 98%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid white;
+}
+
+.message-textbox{
+    width: 100%;
+    padding-bottom: 200px;
+    padding-left: 2px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.form-background{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    max-width: 700px;
+    padding: 80px;
+    margin: 40px 0px 40px 150px;
+}
+
+.form-background h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+input[type=submit]{
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.4);
+    border: 1px solid rgba(217, 217, 217, 0.4);
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+label{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* COntact Us Form */
+
+/* Contact Info */
+.contact-number, .facebook-page, .email-address{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.contact-info{
+    display: flex;
+    gap: 5%;
+}
+
+.epcst-contact-info-container{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    padding: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+/* Contact Info */
+
+/* FOOTER */
+.footer{
+    background-color: #208824;
+    text-align: center;
+}
+
+.footerSchoolName, .epcst-socials, .epcst-end{
+    font-family: 'DM Serif Text', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 350px;
+    margin: 0px auto 0px auto;
+}
+
+.epcst-socials{
+    margin-top: 10px;
+}
+
+.division-line, .division-line-2{
+    border: 1px solid white;
+    max-width: 400px; 
+    margin: 20px auto 0px auto;
+}
+
+.division-line-2{
+    margin-top: 100px;
+    max-width: 300px;
+}
+
+.epcst-socialButtons{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 15px;
+}
+
+.epcst-footer-nav-buttons a{
+    text-decoration: none;
+    color: #F8F8F8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.epcst-footer-nav-buttons ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    list-style: none;
+    padding:0 7px;
+}
+
+.epcst-footer-nav-buttons li{
+    position:relative;
+}
+
+.epcst-footer-nav{
+    margin-top: 20px;
+}
+
+ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+}
+
+.epcst-end{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+.end-epcst{
+    margin-top: 10px;
+}
+/* FOOTER */
