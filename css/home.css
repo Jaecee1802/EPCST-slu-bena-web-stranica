@@ -8,80 +8,83 @@ body{
 }
 
 /* HEADER */
-.epcst-header{
+.epcst-address{
+    text-align: center;
+    padding: 10px;
+    font-family: 'DM Serif Text',  sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
-    gap: 35%;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #F8F8F8;
-    font-family: "DM Serif Text", sans-serif;
-}
-
-.epcst-logo-and-name, .epcst-location{
-    display: flex;
-}
-
-.epcst-location{
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.schoolname{
-    max-width: 400px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.address{
-    max-width: 300px;
-    text-align: center;
+    gap: 1%;
+    font-size: 18px;
 }
 /* HEADER */
 
 /* NAVIGATION */
-.epcst-nav-buttons a{
-    text-decoration: none;
-    color: #F8F8F8;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-    text-align: center;
-    transition: 0.5s;
-    display: inline-block;
-    padding: 2px 6px;
-    position: relative;
-    padding-bottom: 3.5px;
-}
-
-.epcst-nav-buttons a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    left: 50%;
-    position: absolute;
-    background: #208824;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-.epcst-nav-buttons a:hover:after { 
-    width: 100%; 
-    left: 0; 
-}
-
-.epcst-nav-buttons ul{
+.epcstnavigational{
+    padding: 10px;
+    background-color: #eeeeee;
     display: flex;
     justify-content: center;
+    gap: 55vh;
     flex-wrap: wrap;
-    gap: 4%;
-    list-style: none;
 }
 
-.epcstnavigational{
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 12px;
+.epcst-logo-name h2{
+    max-width: 400px;
+    font-family: 'DM Serif Text', sans-serif;
+    margin-top: 30px;
+}
+
+.epcst-logo-name{
+    display: flex;
+}
+
+.right-side a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.right-side a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 6px 16px 6px;
+    border-bottom: 4px solid #208824;
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 6px 16px 6px;
+    border-bottom: 4px solid #208824;
+}
+
+.right-side li{
+    display: inline;
+    margin-right: 40px;
+    transition: 0.2s;
+    padding-bottom: 20px;
+}
+
+.epcst-navigation{
+    margin-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.sticky + .footer{
+    padding-top: 60px;
 }
 
 /* NAVIGATIOn */
