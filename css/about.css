@@ -27,7 +27,7 @@ body{
     background-color: #eeeeee;
     display: flex;
     justify-content: center;
-    gap: 55vh;
+    gap: 40vh;
     flex-wrap: wrap;
 }
 
@@ -65,7 +65,7 @@ body{
 
 .right-side li{
     display: inline;
-    margin-right: 40px;
+    margin-right: 20px;
     transition: 0.2s;
     padding-bottom: 20px;
 }
@@ -307,3 +307,30 @@ ul li:not(:last-child)::after{
     margin-top: 10px;
 }
 /* FOOTER */
+
+@media screen and (max-width: 1449px){    
+    .right-side li{
+        margin-right: 15px;
+    }
+
+    .epcstnavigational{
+        gap: 12%;
+    }
+
+}
+
+@media screen and (max-width: 1259px){
+    .right-side li{
+        margin-right: 15px;
+    }
+
+    .epcstnavigational{
+        gap: 10%;
+    }
+}
+
+@media screen and (max-width: 1239px){
+    .epcstnavigational{
+        gap: 8%;
+    }
+}
