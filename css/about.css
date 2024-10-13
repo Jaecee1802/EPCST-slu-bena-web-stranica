@@ -79,7 +79,7 @@ body{
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 99%;
     z-index: 999;
 }
 
