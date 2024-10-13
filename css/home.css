@@ -5,6 +5,7 @@
 
 body{
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* HEADER */
@@ -39,6 +40,7 @@ body{
 
 .epcst-logo-name{
     display: flex;
+    justify-content: center;
 }
 
 .right-side a{
@@ -124,10 +126,10 @@ body{
 
 /* ACCENT COLOR */
 .accent-color-green{
-    border: 1px solid green;
+    border: 1px solid #208824;
     margin: 10px 0px 10px 0px;
     padding: 6px;
-    background-color: green;
+    background-color: #208824;
 }
 
 .accent-color-black{
@@ -138,134 +140,39 @@ body{
 }
 /* ACCENT COLOR */
 
-/* LATEST NEWS */
-.news-vanity-line{
-    border: 3px solid rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    max-width: 50px;
-    margin-left: 11%;
+/* WHAT STUDENT SAY */
+.what-student-say{
+    background-image: linear-gradient(#208824, #F5F5F5);
+    margin-top: -10px;
+    padding-bottom: 20px;
 }
 
-.container-news{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-left: 4%;
-    flex-wrap: wrap;
-    gap: 9%;
-}
-
-.epcst-latest-news{
-    flex-wrap: wrap;
-    background-color: #D0D0D0;
-    padding-bottom: 80px;
-}
-
-.news-title-pic{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.student-reacts{
+    /* text-align: center; */
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px 80px 0px 80px;
+    padding-bottom: 100px;
 }
 
-.news-photo{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.stud-rex{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
-.news-title{
-    padding-top: 7.5%;
-    padding-left: 10%;
-    margin-left: 20px;
-    font-family: "DM Serif Text", sans-serif;
-}
-
-.epcst-seemore-button{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.9);
-    border: 4px solid rgba(0, 0, 0, 0.9);
-    border-radius: 60px;
-    background-color: #D9D9D9;
-    padding: 10px 60px 10px 60px;
-    margin-top: 5px;
-    transition: 0.5s;
-}
-
-.epcst-seemore-button a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.9);
-    font-size: 20px;
-}
-
-.see-more{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'DM Serif Text', sans-serif;
-    font-size: 20px;
-    margin-top: 80px;
-}
-
-.epcst-seemore-button:hover{
-    background-color: #208824;
-    color: #F8F8F8;
-}
-
-.epcst-news-1 a, .epcst-news-2 a, .epcst-news-3 a{
-    text-decoration: none;
-    color: black;
-    transition: 0.5s;
-}
-
-.epcst-news-1 a:hover, .epcst-news-2 a:hover, .epcst-news-3 a:hover{
+.student-reacts h1{
+    padding-top: 20px;
     color: #208824;
-    
-}
-
-.epcst-news-1 img, .epcst-news-2 img, .epcst-news-3 img{
-    text-decoration: none;
-    color: black;
-    transition: scale .5s;
-}
-
-.epcst-news-1 img:hover, .epcst-news-2 img:hover, .epcst-news-3 img:hover{
-    transform:scale(1.05);
-}
-
-
-/* LATEST NEWS */
-
-
-/* EPCST STUDENTS REVIEW */
-.epcst-students-say{
-    background-color: #E5E5E5;
-    padding-bottom: 10%;
-}
-
-.epcst-students-say h1{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 48px;
     text-align: center;
-    font-family: 'DM Serif Text', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    padding-top: 8%;
-}
-
-.rev-descrip{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    text-decoration: underline;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 .kuya-ray, .herlyn{
     background-color: #F8F8F8;
-    max-width: 500px;
+    width: 650px;
     display: flex;
     justify-content: center;
     gap: 4%;
@@ -288,6 +195,8 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 28vw;
 }
 
 .student-name{
@@ -304,10 +213,148 @@ body{
     flex-wrap: wrap;
 }
 
-/* EPCST STUDENT REVIEW */
+/* WHAT STUDENT SAY */
+
+/* CHOOSE EPCST */
+.choose-epcst{
+    background-color: #F5F5F5;
+    padding-top: 250px;
+    padding-bottom: 180px;
+}
+
+.choose-title{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #208824;
+}
+
+.choose-epcst article{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.butt-on{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.about-epcst-button{
+    background-color: #F5F5F5;
+    text-decoration: none;
+    color: #208824;
+    font-size: 20px;
+    padding: 14px 25px;
+    border: 2px solid #208824;
+    border-radius: 60px;
+    font-family: "Raleway", sans-serif;
+    transition: 1s;
+}
+
+.about-epcst-button:hover{
+    background-color: #208824;
+    color: white;
+}
+/* CHOOSE EPCST */
+
+/* NEWS AND EVENTS */
+.news-and-events{
+    background-color: #e6e6e6;
+    padding-bottom: 120px;
+}
+
+.news-title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #208824;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.latest-news-titlebar{
+    background-color: #208824;
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.latest-news-titlebar h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+.div-events h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-events{
+    background-color: #FFFFFF;
+    padding: 200px;
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px 14vw 5vw 14vw;
+}
+
+/* CAROUSEL OF CARDS */
+.card-one{
+    max-width: 15vw;
+    background-color: #FFFFFF;
+    padding-bottom: 10vh;
+}
+
+.news-cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 20px;
+}
+
+.card-one a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.card-title h3{
+    font-family: "Raleway", sans-serif;
+    color: black;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.date-comment{
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 0.5%;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 15px;
+}
+/* CAROUSEL OF CARDS */
+
+/* NEWS AND EVENTS */
 
 /* FOOTER */
-
 .footer{
     background-color: #208824;
     text-align: center;
@@ -389,6 +436,13 @@ ul li:not(:last-child)::after{
 .end-epcst{
     margin-top: 10px;
 }
+/* FOOTER */
+
+
+
+/* CAROUSEL */
+
+/* CAROUSEL */
 
 @media screen and (max-width: 1449px){    
     .right-side li{
