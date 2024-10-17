@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- SwiperJS CSS Dora and her monke called "boots": Swiper no swiping! Swiper: Awe man! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
@@ -25,41 +30,64 @@
             background-position: center;
             background-size: cover;
         }
+        .epcst-banner{
+            background-image: url(images/Background\ Footer.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            height: 100vh; 
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
 
-     <div class="container">
+     <div class="container1">
        <!-- start of the code -->
+
+
         <div class="epcst-address">  <!--main div of the header-->
             <h3>A.H. Banzon St. Ibayo, City of Balanga, Bataan</h3>
             <img src="images/Location Icon With Transparent Background.png" alt="EPCST-Location" 
             style="max-height: 30px;">
         </div>
-
-        <div class="epcstnavigational" id="head-navbar">  <!--main div of the navigation-->
-            <div class="epcst-logo-name">
-                <img src="images/websiteLogo.png" alt="School Logo" style="max-height: 150px;">
-                <h2>Eastwoods Professional College  of Science and Technology</h2>
+       
+        <div class="epcst-banner"> <!--main div of the banner--> 
+            <div class="gradientcolor"></div>
+            <div class="epcstnavigational" id="head-navbar">  <!--main div of the navigation-->
+                <div class="epcst-logo-name">
+                    <img src="images/websiteLogo.png" alt="School Logo" style="max-height: 130px;">
+                    <h2>Eastwoods Professional College  of Science and Technology</h2>
+                </div>
+                <div class="topnav">
+                    <form>
+                    <input type="text" placeholder="Search">
+                    <button class="isearch" type="submit"><i class="fa fa-search fa-2x"></i></button>
+                    </form>
+                </div>
+                
+                <div class="epcst-navigation">
+                    <nav class="right-side">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="newsevent.html">News and Events</a></li>
+                            <li><a href="contactus..html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
-            <div class="epcst-navigation">
-                <nav class="right-side">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="newsevent.html">News and Events</a></li>
-                        <li><a href="contactus..html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
+        
+    
 
-        <div class="epcst-banner"> <!--main div of the banner-->
 
-            <h1 class="epcst-bannerName">Eastwoods Professional College of Science & Technology</h1>
-        </div>
+        
 
         <div class="what-student-say"><!--main div for student say-->
             <div class="accent-color-green"></div>
@@ -222,10 +250,21 @@
     
             </div>
     
-        </div>
+    
         <!-- end of the code -->
-     </div>
+    </div>
+    <script>
+        document.addEventListener( 'scroll', () => {
+            const epcstnavigational = document.querySelector('.epcstnavigational');
+            
+            if (window.scrollY > 10 ) {
+                epcstnavigational.classList.add('scrolled');
 
+            }else{
+                epcstnavigational.classList.remove('scrolled');
+            }
+        });
+    </script>
      <script src="script/stickyNav.js"></script>
      <script src="script/carousel.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
