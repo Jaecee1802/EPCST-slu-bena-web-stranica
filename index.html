@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- SwiperJS CSS Dora and her monke called "boots": Swiper no swiping! Swiper: Awe man! -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
@@ -55,8 +56,18 @@
             style="max-height: 30px;">
         </div>
        
+        <div class="topnaver" id="myTopnav">
+            <a href="#home"></a>Home</a>
+            <a href="#news">About</a>
+            <a href="#contact">Programs</a>
+            <a href="#about">News and Events</a>
+            <a href="#about">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
         <div class="epcst-banner"> <!--main div of the banner--> 
-            <div class="gradientcolor"></div>
             <div class="epcstnavigational" id="head-navbar">  <!--main div of the navigation-->
                 <div class="epcst-logo-name">
                     <img src="images/websiteLogo.png" alt="School Logo" style="max-height: 130px;">
@@ -64,12 +75,12 @@
                 </div>
                 <div class="topnav">
                     <form>
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" >
                     <button class="isearch" type="submit"><i class="fa fa-search fa-2x"></i></button>
                     </form>
                 </div>
                 
-                <div class="epcst-navigation">
+                <div class="epcst-navigation"> 
                     <nav class="right-side">
                         <ul>
                             <li><a href="index.html" class="active">Home</a></li>
@@ -81,13 +92,10 @@
                     </nav>
                 </div>
             </div>
-
         </div>
         
-    
-
-
         
+          
 
         <div class="what-student-say"><!--main div for student say-->
             <div class="accent-color-green"></div>
@@ -264,6 +272,15 @@
                 epcstnavigational.classList.remove('scrolled');
             }
         });
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnaver") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnaver";
+            }
+        }
     </script>
      <script src="script/stickyNav.js"></script>
      <script src="script/carousel.js"></script>
