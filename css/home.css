@@ -73,7 +73,7 @@ body{
 }
 .epcstnavigational.scrolled{
     background-color: #208824;
-    height: 150px;
+    height: 10px;
     opacity: 0.95;
 }
 .epcst-logo-name h2{
@@ -467,7 +467,9 @@ ul li:not(:last-child)::after{
 /* sample */
 .topnaver{
     display: none;
+    
 }
+
 
 /* CAROUSEL */
 
@@ -499,7 +501,7 @@ ul li:not(:last-child)::after{
 }
 @media screen and (max-width: 480px) {
     .topnaver{
-        display: contents;
+        display: inline;
     }
     .epcst-logo-name h2{
         visibility: hidden;
@@ -510,44 +512,72 @@ ul li:not(:last-child)::after{
     .topnav :nth-child(1){
         visibility: hidden;
     }
+    .epcst-logo-name img{
+        height: 100px;
+        margin-left: 20%;
+        
+        position: static;
+    }
    
 }
-@media screen and (max-width: 480px) {
-    .topnaver a:not(:first-child) {display: none;}
-    .topnaver a.icon {
-      float: right;
-      display: block;
-    }
-  }
+@media screen and (max-width: 480px) 
+{
+   
+}
   
   @media screen and (max-width: 480px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+    }
     .topnaver.responsive .icon {
       position: absolute;
-      right: 0;
+      left: 0;
       top: 70px;
+      color: black;
+      margin-left: 3px;
+      /* margin-top: 30px; */
+    }
+    .topnaver a:not(:first-child) 
+    {
+      display: none;
+    }
+    .topnaver a.icon 
+    {
+    left: 0;
+    display: block;
     }
     .topnaver.responsive a {
       float: none;
       display: block;
       text-align: left;
+
+    }
+    .topnaver.responsive a:first-child{
+        margin-top: 50px;
+    }
+    .topnaver.responsive a:hover{
+        color: white;
     }
     .topnaver {
         overflow: hidden;
         background-color: #000000;
-        margin-bottom: 500px;
+        margin-bottom: 530px;
       }
-      .icon{
+      .topnaver .icon{
         color: white;
+        margin-left: -30px;
+        font-size: 25px; 
+        margin-top: 25px;
       }
       .topnaver a {
         float: left;
         display: block;
-        color: #050505;
+        color: black;
         text-align: center;
-        padding: 14px 16px;
+        padding: 12px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-weight: 550;
+        font-size: 19px;
       }
       
       .topnaver a:hover {
@@ -555,7 +585,7 @@ ul li:not(:last-child)::after{
         color: white;
       }
       
-      .topnaver .icon {
+      /* .topnaver .icon {
         display: none;
-      }
+      } */
   }
