@@ -73,7 +73,7 @@ body{
 }
 .epcstnavigational.scrolled{
     background-color: #208824;
-    height: 10px;
+    height: 140px;
     opacity: 0.95;
 }
 .epcst-logo-name h2{
@@ -470,6 +470,11 @@ ul li:not(:last-child)::after{
     
 }
 
+.search-icon-mob{
+    display: none;
+    
+}
+
 
 /* CAROUSEL */
 
@@ -499,9 +504,19 @@ ul li:not(:last-child)::after{
         gap: 8%;
     }
 }
+
+
+/* MOBILE VIEWPORT */
+
 @media screen and (max-width: 480px) {
+    .epcst-address{
+        font-size: 14px;
+
+    }
     .topnaver{
         display: inline;
+        position: fixed;
+        font-family: Montserrat;
     }
     .epcst-logo-name h2{
         visibility: hidden;
@@ -514,78 +529,124 @@ ul li:not(:last-child)::after{
     }
     .epcst-logo-name img{
         height: 100px;
-        margin-left: 20%;
+        margin-left: 36%;
         
         position: static;
     }
-   
-}
-@media screen and (max-width: 480px) 
-{
-   
-}
-  
-  @media screen and (max-width: 480px) {
-    .topnav.responsive {
-        position: relative;
+    .epcstnavigational.scrolled{
+        background-color: #208824;
+        height: 90px;
+        opacity: 0.95;
     }
-    .topnaver.responsive .icon {
-      position: absolute;
-      left: 0;
-      top: 70px;
-      color: black;
-      margin-left: 3px;
-      /* margin-top: 30px; */
+    .search-icon-mob{
+        height: 25px;
+        margin-top:  -157px;
+        margin-left: 310px;
+        display: flex;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 30px;
+        align-items: center;
+        
     }
-    .topnaver a:not(:first-child) 
-    {
-      display: none;
+    .search-icon-mob:hover{
+        background: #047417;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
-    .topnaver a.icon 
-    {
-    left: 0;
-    display: block;
+    .search-icon-mob:hover input{
+        width: 300px;
+        
     }
-    .topnaver.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    .search-icon-mob input{
+        width: 0;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        transition: 0.6s;
+        background: transparent;
+        color: white;
+        font: 30px;
 
     }
-    .topnaver.responsive a:first-child{
-        margin-top: 50px;
-    }
-    .topnaver.responsive a:hover{
+    .search-icon-mob a .fas{
+        font: 40px;
+        font-family: Montserrat;
+    } 
+    .search-icon-mob i{
+        font-size: 27px;
         color: white;
     }
-    .topnaver {
-        overflow: hidden;
-        background-color: #000000;
-        margin-bottom: 530px;
-      }
-      .topnaver .icon{
+    
+}
+    
+    @media screen and (max-width: 480px) {
+        .topnaver.responsive {
+            width: 800px; 
+            background-color: #11053d;
+            opacity: 0.80;
+            
+        }
+        .topnaver.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
         color: white;
-        margin-left: -30px;
-        font-size: 25px; 
-        margin-top: 25px;
-      }
-      .topnaver a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 12px 16px;
-        text-decoration: none;
-        font-weight: 550;
-        font-size: 19px;
-      }
-      
-      .topnaver a:hover {
-        background-color: #0c3d0d;
-        color: white;
-      }
-      
-      /* .topnaver .icon {
+        margin-left: 370px;
+        /* margin-top: 30px; */
+        }
+        .topnaver a:not(:first-child) 
+        {
         display: none;
-      } */
-  }
+        }
+        .topnaver a.icon 
+        {
+        left: 0;
+    
+        display: block;
+        }
+        .topnaver.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 370px;
+        
+
+        }
+        
+        .topnaver.responsive a:first-child{
+            margin-top: 70px;
+        }
+        .topnaver.responsive a:hover{
+            color: white;
+            
+        }
+        .topnaver {
+            overflow: hidden;
+            margin-right: 375px;
+            /* background-color: #0ddf17; */
+            opacity: 0.95;
+            margin-bottom: 530px;
+        }
+        .topnaver .icon{
+            color: white;
+            margin-left: -30px;
+            font-size: 25px; 
+            margin-top: 25px;
+        }
+        .topnaver a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 14px;
+            text-decoration: none;
+            font-weight: 520;
+            font-size: 17px;
+        }
+        
+        .topnaver a:hover {
+            background-color: #270763;
+            
+        } 
+        
+    }
