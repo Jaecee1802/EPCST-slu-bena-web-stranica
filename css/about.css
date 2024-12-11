@@ -313,6 +313,17 @@ ul li:not(:last-child)::after{
 .end-epcst{
     margin-top: 10px;
 }
+.mobileBanner{
+    display: none;
+}
+.epcst-logo-name2{
+    display: none;
+}
+.mob-old-bldg, .greenBarMission, .greenBarVision
+, .greenBarHymn{
+    display: none;
+}
+
 /* FOOTER */
 
 @media screen and (max-width: 1449px){    
@@ -340,4 +351,286 @@ ul li:not(:last-child)::after{
     .epcstnavigational{
         gap: 8%;
     }
+}
+@media only screen and (max-width: 480px){
+    .epcst-address{
+        display: none;
+    }
+    .epcst-navigation{
+        display: none;
+    }
+    .epcst-logo-name h2{
+        visibility: hidden;
+    }
+    .epcst-navigation{
+        visibility: hidden;
+    }
+    .topnav :nth-child(1){
+        visibility: hidden;
+    }
+    
+    .epcstnavigational{
+        display: none;
+    }
+    .epcst-about-title{
+        display: none;
+    }
+    .accent-white-line{
+        display: none;
+    }
+    .about-container{
+        display: none;
+    }
+    
+    .mobileBanner{
+        height: 700px;
+        display: flex;
+        
+    }
+    .topnaver{
+        display: inline;
+        position: fixed;
+        font-family: Montserrat;
+        
+    }
+    .topnaver.responsive {
+        width: 885px; 
+        background-color: #054708;
+        opacity: 0.90;
+        overflow: hidden;
+        
+        
+    }
+    .topnaver.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    margin-left: 440px;
+    margin-top: 30px;
+    
+    }
+    .topnaver a:not(:first-child) 
+    {
+    display: none;
+    }
+    .topnaver a.icon 
+    {
+    left: 0;
+    display: block;
+    
+    }
+    .topnaver.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-left: 430px;
+    
+
+    }
+    
+    .topnaver.responsive a:first-child{
+        margin-top: 80px;
+    }
+    .topnaver.responsive a:hover{
+        color: white;
+        
+    }
+    .topnaver {
+        overflow: hidden;
+        margin-right: 410px;
+        opacity: 0.95;
+        margin-top: -10px;
+    }
+    .topnaver .icon{
+        color: white;
+        margin-left: 60px;
+        font-size: 45px; 
+        margin-top: 10px;
+    }
+    .topnaver a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 14px;
+        text-decoration: none;
+        font-weight: 520;
+        font-size: 19px;
+    }
+    
+    .topnaver a:hover {
+        background-color: #085c13;
+        opacity: 0.90;
+        
+    } 
+    .search-icon-mob{
+        height: 25px;
+        margin-top:  55px;
+        margin-left: 340px;
+        display: flex;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 30px;
+        align-items: center;
+        position: fixed;
+        
+        
+    }
+    .epcst-logo-name2{
+        display:flex;
+        margin-bottom:  -300px;
+        margin-left: 155px;
+        position: fixed;
+        
+    }
+    .search-icon-mob:hover{
+        background: #047417;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        margin-right: 80px;
+    }
+    .search-icon-mob:hover input{
+        width: 80px;
+        left: 0;
+        
+    }
+    .search-icon-mob input{
+        width: 0;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        transition: 0.6s;
+        background: transparent;
+        color: white;
+        font: 30px;
+
+    }
+    .search-icon-mob a .fas{
+        font: 40px;
+        font-family: Montserrat;
+    } 
+    .search-icon-mob i{
+        font-size: 45px;
+        color: white;
+    }
+    .east-old-bldg{
+        display: none;
+    }
+    .mob-old-bldg{
+        display: block;
+    }
+    .epcst-about-school .aboutText{ 
+        width: 250px;
+        height: 300px;
+        margin-right: 177px;
+        
+    }
+    .aboutText p{
+        font-size: 18px;
+    }
+    .epcst-glance img{
+        width: 150px;
+        height: 70px;
+    }
+    .epcst-glance{
+        margin-top: -470px;
+        margin-left: 270px;
+        width: 150px;
+    }
+    .epcst-glance h2{
+        font-size: 24px;
+    }
+    .epcst-glance ul{
+        font-size: 18px;
+    }
+    .title-color-black{
+        width: 400px;
+    }
+
+    .mission-vision-container{
+        display: block;
+        width: 400px;
+        margin-top: 50px;
+        margin-left: 15px;
+        background-color: white;
+        
+    }
+    .mission-desc, .vision-desc{
+        font-size: 19px;
+        margin-bottom: 100px;
+    }
+    .title-color, 
+    .title-color-black, 
+    .accent-color-green,
+    .accent-color-black
+    {
+        display: none;
+    }
+    .greenBarMission{
+        width: 400px;
+        background-color: green;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-top: 70px;
+    }
+    .greenBarMission h2{
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 7px;
+    }
+    .greenBarVision{
+        width: 400px;
+        background-color: green;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-top: 70px;
+    }
+    .greenBarVision h2{
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 7px;
+    }
+    .greenBarHymn{
+        width: 400px;
+        background-color: green;
+        height: 50px;
+        margin-bottom: 15px;
+        margin-left: 18px;
+    }
+    .greenBarHymn h1{
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 7px;
+        
+    }
+    .epcst-hymn-container h2{
+        display: none;
+    }
+
+    .epcst-hymn-container p{
+        text-align: justify;
+        text-justify: inter-word;
+        padding-left: 20px;
+        padding-right: 22px;
+        background-color: white;
+    }
+    .epcst-hymn-container{
+        margin-top: 20px;
+    }
+
+    .about-container-2{
+        background-color: white;
+    }
+    .qwe{
+        background-color: rgba(3, 163, 51, 0.555);
+        width: 100%;
+        height: 120px;
+        margin-left: -14px;
+        opacity: 0.20;
+        box-shadow: 5px 5px  5px  5px  black;
+        position: fixed;
+
+    }
+    
+      
 }

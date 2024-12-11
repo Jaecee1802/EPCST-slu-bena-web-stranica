@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
-
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
         .about-container{
             background-image: url(images/Background\ Footer.jpg);
             background-repeat: no-repeat;
@@ -32,6 +46,17 @@
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
+        }
+        .mobileBanner{
+            background-image: url(images/Background\ Footer.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            height: 100vh; 
+            width: 100vw;
+            margin-left: -15px;
+            justify-content: center;
         }
     </style>
 </head>
@@ -61,26 +86,72 @@
                 </nav>
             </div>
         </div>
-
+        
         <div class="about-container"> <!--main div for about banner-->
             <div class="accent-white-line"></div>
 
-            <div class="epcst-about-banner">
+            <div class="-">
                 <h2 class="epcst-about-title">ABOUT</h2>
+
             </div>
             
         </div>
+    </div>
+<!-- for mobile only-->
+ <div class="qwe"></div>
+        <div class="epcst-logo-name2">
+                <img src="images/websiteLogo.png" alt="School Logo" style="max-height: 130px;">
+        </div>
+        <div class="qwe"></div>
+<!-- for mobile only-->
+
+<!-- for mobile only-->
+    <div class="mobileBanner"> 
+        <div class="topnaver" id="myTopnav">
+            <a href="index.html"></a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="newsevent.html">News and Events</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        
+        <div class="search-icon-mob">
+            <input type="text" placeholder="Search">
+                <a href="#">
+                    <i class="fa fa-search fa"></i>
+                </a>
+       </div>
+    </div>
+
+<!-- for mobile only-->
+    
 
         <div class="about-container-2"> <!--main div for about-->
 
             <div class="epcst-about-school">
                 <article>
                     <img src="images/schoolbuilding.png" alt="EPCST Old Building" class="east-old-bldg" style="height: 300px; width: 800px;">
-                    <p class="epcst-abt-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> <br>                         
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    
+                    <!-- for mobile only-->
+                    <img src="images/schoolbuilding.png" alt="EPCST Old Building" class="mob-old-bldg" style="height: 150px; width: 250px;">
+                    <!-- for mobile only-->
+                    <div class="aboutText">
+                        <p class="epcst-abt-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore maa 
+                        aliqua. Ut enim ad minim veniam, qi nostrud exercitation  
+                        ullamco laboris nisi ut aliquip ex ea commosdo consequat                         
+                        Duis aute irure dolor in reprehenderit in voluptate veit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteursi  
+                        aliqua. Ut enim ad minim veniam, qi nostrud exercitation
+                        nostrud.
+                        </p>
+                    </div>    
                 </article>
             </div>
 
@@ -107,7 +178,16 @@
                     <div class="title-color">
                         <h2 class="mission-title">MISSION</h2>
                     </div>
-                <p class="mission-desc"> To develop and offer high quality technical, health and higher education programs that would ensure employability and productivity of young men and women through proper value and principles as a means to achieve success with excellence for a better quality of life.</p>
+
+                    <div class="greenBarMission">
+                        <b><h2 class="mission-title">MISSION</h2></b>
+                    </div>
+
+                <p class="mission-desc"> To develop and offer high quality technical, health and higher education programs that would 
+                    ensure employability and productivity of young men and women through proper value and principles as a means to 
+                    achieve success with excellence for a better quality of life. To develop and offer high quality technical, health and higher education programs that would 
+                    ensure employability and productivity of young men and women through proper value, young men and women through proper value, better quality of life. To develop and offer high quality technical, health and higher education programs that would 
+                    ensure employability and productivity of young men and women through proper value.</p>
                 </article>
             </div>
 
@@ -117,7 +197,14 @@
                     <div class="title-color">
                         <h2 class="vision-title">VISION</h2>
                     </div>
-                <p class="vision-desc">A center of excellence in technical, vocational, health and higher education in Bataan, pursuing dynamic program offerings paralleled to global standards to uplift the socio-economic growth of the province.</p>
+                    <div class="greenBarVision">
+                        <b><h2 class="mission-title">VISION</h2></b>
+                    </div>
+                <p class="vision-desc">A center of excellence in technical, vocational, health and higher education in Bataan, pursuing dynamic, better quality of life. To develop and offer high quality technical, health and higher education programs that would 
+                    ensure employability and productivity of young men and women through proper value.
+                     program offerings paralleled to global standards to uplift the socio-economic growth of the province. A center of excellence in technical, vocational, health and higher education in Bataan, pursuing dynamic
+                     program offerings paralleled to global standards to better quality of life. To develop and offer high quality technical, health and higher education programs that would 
+                     ensure employability and productivity of young men and women through proper value uplift the socio-economic growth of the province.</p>
                 </article>
             </div>
         </div>
@@ -125,7 +212,11 @@
         <div class="accent-color-green"></div>
 
         <div class="epcst-hymn-container"><!--Main div for eastwoods hymn-->
-            <h2>EASTWOODS HYMN</h2>
+            <h2 >EASTWOODS HYMN</h2>
+        
+            <div class="greenBarHymn">
+                <b><h1 class="mission-title">EASTWOODS HYMN</h1></b>
+            </div>
 
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -144,6 +235,7 @@
 
         <div class="accent-color-green"></div><!--Vanity-->
         <div class="accent-color-black"></div>
+
 
         <div class="footer"><!--main div for footer-->
 
@@ -189,14 +281,29 @@
                 </div>
     
             </div>
-    
         </div>
         
          <!-- end of the code -->
 
          <!-- stream NEWJEANS, BINI, TWICE, THE WEEKND, LE SSERAFIM -->
     </div>
+    
 
+    <script>
+    // SCRIPT FOR MOBILE MENU
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnaver") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnaver";
+            }
+        }
+    // SCRIPT FOR MOBILE MENU 
+    // SCRIPT FOR MOBILE MENU NAVBAR SCROLL
+       
+    // SCRIPT FOR MOBILE MENU NAVBAR SCROLL
+    </script>
     <script src="script/stickyNav.js"></script>
 </body>
 </html>

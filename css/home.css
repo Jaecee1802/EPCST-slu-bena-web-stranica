@@ -823,5 +823,6 @@ ul li:not(:last-child)::after{
             background-color: #270763;
             
         } 
+
         
     }
