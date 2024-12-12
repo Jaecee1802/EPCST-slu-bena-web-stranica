@@ -375,8 +375,9 @@ ul li:not(:last-child)::after{
     }
     
     .mobileBanner{
-        height: 700px;
+        height: 800px;
         display: flex;
+        margin-left: 15px;
         
     }
     .topnaver{
@@ -514,7 +515,7 @@ ul li:not(:last-child)::after{
     .epcst-about-school .aboutText{ 
         width: 250px;
         height: 300px;
-        margin-right: 177px;
+        margin-right: 150px;
         
     }
     .aboutText p{
@@ -616,7 +617,7 @@ ul li:not(:last-child)::after{
     }
     .qwe{
         background-color: rgba(3, 163, 51, 0.555);
-        width: 100%;
+        width: 450px;
         height: 120px;
         opacity: 0.20;
         box-shadow: 5px 5px  5px  5px  black;
