@@ -398,7 +398,7 @@ ul li:not(:last-child)::after{
     left: 0;
     top: 0;
     color: white;
-    margin-left: 400px;
+    margin-left: 450px;
     margin-top: 30px;
     
     }
@@ -436,7 +436,7 @@ ul li:not(:last-child)::after{
     }
     .topnaver .icon{
         color: white;
-        margin-left: 140px;
+        margin-left: 120px;
         font-size: 45px; 
         margin-top: 10px;
     }
@@ -458,8 +458,8 @@ ul li:not(:last-child)::after{
     } 
     .search-icon-mob{
         height: 25px;
-        margin-top:  53px;
-        margin-left: 290px;
+        margin-top:  51px;
+        margin-left: 265px;
         display: flex;
         cursor: pointer;
         padding: 10px 20px;
@@ -472,7 +472,7 @@ ul li:not(:last-child)::after{
     .epcst-logo-name2{
         display:flex;
         margin-bottom:  -300px;
-        margin-left: 155px;
+        margin-left: 140px;
         position: fixed;
         
     }
@@ -494,7 +494,7 @@ ul li:not(:last-child)::after{
         transition: 0.6s;
         background: transparent;
         color: white;
-        font: 30px;
+        font: 28px;
 
     }
     .search-icon-mob a .fas{
@@ -512,9 +512,9 @@ ul li:not(:last-child)::after{
         display: block;
     }
     .epcst-about-school .aboutText{ 
-        width: 250px;
+        width: 220px;
         height: 300px;
-        margin-right: 150px;
+        margin-right: 230px;
         
     }
     .aboutText p{
@@ -526,7 +526,7 @@ ul li:not(:last-child)::after{
     }
     .epcst-glance{
         margin-top: -470px;
-        margin-left: 270px;
+        margin-left: 170px;
         width: 150px;
     }
     .epcst-glance h2{
@@ -543,7 +543,7 @@ ul li:not(:last-child)::after{
         display: block;
         width: 350px;
         margin-top: 50px;
-        margin-left: 55px;
+        margin-left: 25px;
         background-color: white;
         
     }
@@ -576,7 +576,7 @@ ul li:not(:last-child)::after{
         background-color: green;
         height: 50px;
         margin-bottom: 15px;
-        margin-left: 30px;
+        margin-left: 3px;
         display: block;
     }
     .greenBarVision h2{
@@ -589,7 +589,7 @@ ul li:not(:last-child)::after{
         background-color: green;
         height: 50px;
         margin-bottom: 15px;
-        margin-left: 18px;
+        margin-left: 25px;
         display: block;
     }
     .greenBarHymn h1{
@@ -600,28 +600,32 @@ ul li:not(:last-child)::after{
     }
     .epcst-hymn-container h2{
         display: none;
+
     }
 
     .epcst-hymn-container p{
         text-align: justify;
         text-justify: inter-word;
-        padding-left: 20px;
-        padding-right: 22px;
+        margin-right: 105px;
         background-color: white;
+        width: 350px;
+    
+
     }
-
-
     .about-container-2{
         background-color: white;
     }
     .qwe{
         background-color: rgba(3, 163, 51, 0.555);
-        width: 415px;
+        width: 400px;
         height: 120px;
         opacity: 0.20;
         box-shadow: 5px 5px  5px  5px  black;
         position: fixed;
 
+    }
+    .footer{
+        width: 400px;
     }
     
       
