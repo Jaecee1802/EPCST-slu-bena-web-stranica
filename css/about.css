@@ -377,7 +377,6 @@ ul li:not(:last-child)::after{
     .mobileBanner{
         height: 800px;
         display: flex;
-        margin-left: 15px;
         
     }
     .topnaver{
@@ -542,9 +541,9 @@ ul li:not(:last-child)::after{
 
     .mission-vision-container{
         display: block;
-        width: 400px;
+        width: 350px;
         margin-top: 50px;
-        margin-left: 15px;
+        margin-left: 45px;
         background-color: white;
         
     }
@@ -560,11 +559,11 @@ ul li:not(:last-child)::after{
         display: none;
     }
     .greenBarMission{
-        width: 400px;
+        width: 350px;
         background-color: green;
         height: 50px;
         margin-bottom: 15px;
-        margin-top: 70px;
+        margin-left: 10px;
         display: block;
     }
     .greenBarMission h2{
@@ -573,11 +572,11 @@ ul li:not(:last-child)::after{
         padding-top: 7px;
     }
     .greenBarVision{
-        width: 400px;
+        width: 350px;
         background-color: green;
         height: 50px;
         margin-bottom: 15px;
-        margin-top: 70px;
+        margin-left: 30px;
         display: block;
     }
     .greenBarVision h2{
@@ -586,7 +585,7 @@ ul li:not(:last-child)::after{
         padding-top: 7px;
     }
     .greenBarHymn{
-        width: 400px;
+        width: 350px;
         background-color: green;
         height: 50px;
         margin-bottom: 15px;
