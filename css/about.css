@@ -609,9 +609,7 @@ ul li:not(:last-child)::after{
         padding-right: 22px;
         background-color: white;
     }
-    .epcst-hymn-container{
-        margin-top: 20px;
-    }
+
 
     .about-container-2{
         background-color: white;
@@ -620,7 +618,7 @@ ul li:not(:last-child)::after{
         background-color: rgba(3, 163, 51, 0.555);
         width: 100%;
         height: 120px;
-        /* margin-left: -14px; */
+        margin-left: 14px;
         opacity: 0.20;
         box-shadow: 5px 5px  5px  5px  black;
         position: fixed;
